@@ -779,7 +779,7 @@ def refine_detections_graph(rois, probs, deltas, window, config):
     return detections
 
 
-class DetectionLayerKE.base_layer.Layer):
+class DetectionLayer(KE.base_layer.Layer):
     """Takes classified proposal boxes and their bounding box deltas and
     returns the final detection boxes.
 
